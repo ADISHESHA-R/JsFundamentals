@@ -13,5 +13,5 @@ console.log(mytotal);
 const sa=arr.map((a)=>a+3).filter((a)=>a>2);
 console.log(sa);
 
-const mts=arr.reduce((acc,num)=>acc*num,1);
+const mts=arr.reduce((acc,num)=>acc*num,0);
 console.log(mts);
