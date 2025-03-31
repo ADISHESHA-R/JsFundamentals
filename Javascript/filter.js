@@ -1,4 +1,4 @@
-let arr=[1,2,3,4,5,6,7,8,9];
+let arr=[1,2,3,4,5];
 const ee=arr.filter((n)=>n>4);
 console.log(ee);
 
@@ -13,4 +13,5 @@ console.log(mytotal);
 const sa=arr.map((a)=>a+3).filter((a)=>a>2);
 console.log(sa);
 
-   
+const mts=arr.reduce((acc,num)=>acc*num,1);
+console.log(mts);
