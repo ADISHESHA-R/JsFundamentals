@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page Buddy...!</title>
+    <style>
+        #first {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(155, 155, 211);
+            margin-bottom: 20px; /* Adds spacing below the paragraph */
+        }
+    
+        #button-container,#list,#listbtn {
+            display: flex;
+            justify-content: center; /* Centers the buttons horizontally */
+            gap: 30px; /* Adds spacing between the buttons */
+        }
+    
+        #fstbtn, #back{
+            display: inline-flex;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px; /* Adds padding for better appearance */
+            background-color: rgb(189, 255, 187);
+            cursor: pointer;
+        }
+        #add, #remove{
+            display:inline-flex;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 20px; /* Adds padding for better appearance */
+            background-color: rgb(189, 255, 187);
+            cursor: pointer;
+            background-color: rgb(175, 193, 247);
+        } 
+        #fstbtn:hover, #back:hover {
+            background-color: rgb(127, 255, 42);
+            color: white;
+        }
+    </style>
+</head>
+<body id="body">
+    <header id="navbar">
+        <button id="Dark">
+            <img src="https://cdn2.vectorstock.com/i/1000x1000/51/16/sun-dark-mode-glyph-ui-icon-vector-43805116.jpg" alt="Dark Mode" width="30">
+        </button>
+    </header>
+    <div id="content">
+        <p id="first">Lorem ipsum 533947 dolor sit amet consectetur adipisicing elit.</p>
+        <div id="button-container">
+            <button id="fstbtn">Click me..!</button>
+            <button id="back">Back</button>
+        </div>
+        <div id="list">
+            <ul id="cartlist">
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+        </div>
+        <div id="listbtn">
+            <button id="add">Add</button>
+            <button id="remove">Remove</button>
+        </div>
+    </div>
+    <script src="first.js"></script>
+</body>
+</html>
