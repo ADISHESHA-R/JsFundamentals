@@ -13,7 +13,7 @@ document.getElementById("fstbtn").addEventListener("click", () => {
     para.textContent = "Adishesha R Website";
     console.log(para.textContent);
     para.style.color = "pink";
-    para.style.backgroundColor = "black";
+    para.style.backgroundColor = "white";
     para.style.fontSize = "40px";
     para.style.fontFamily = "Arial";
 });
@@ -56,11 +56,17 @@ document.getElementById("Dark").addEventListener("click", () => {
 });
 document.getElementById("add").addEventListener("click", function(){
     let newItem=document.createElement("li");
-    newItem.textContent="eggs";
+    newItem.textContent=prompt("Enter the item to add to the cart:");
     document.getElementById("cartlist").appendChild(newItem);
 }
 );
 document.getElementById("remove").addEventListener("click", function(){
     let removeItem=document.getElementById("cartlist");
     removeItem.lastElementChild.remove();
-})
+});
+function display(){
+    let input=document.getElementById("input").value;
+    let comment=document.createTextNode("comment");
+    comment.textContent=input;
+    document.getElementById("cartlist").appendChild(comment);
+};
