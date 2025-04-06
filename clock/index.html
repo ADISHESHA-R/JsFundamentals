@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Time</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #clock {
+            background-color: #ffffff;
+            font-size: 48px;
+            color: #000000;
+        }
+        .box {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .box::before {
+            content: attr(data-time);
+            font-size: 48px;
+            color: #000000;
+        }
+        #image {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        h1{
+            background-color: #fff;
+            height:fit-content;
+            width:fit-content;
+        }
+        </style>
+</head>
+<body>
+    <img id="image"src="https://media.istockphoto.com/id/886511790/vector/turquoise-background-with-gears.jpg?s=612x612&w=0&k=20&c=tjBy2ei5L815x36kPC4aIPmcilYl6nYv7JQD-fd3LwY="/>
+    <h1><b><u>INDIAN STANDARD TIME (IST)</u></b></h1>
+<div id="clock">
+    <b><span id="box"></span></b>
+</div>
+<script src="clock.js"></script>
+</body>
+</html>
