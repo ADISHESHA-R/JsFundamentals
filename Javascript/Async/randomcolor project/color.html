@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Color</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Color</title>
+  <style>
+    body {
+      transition: background-color 0.5s ease;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    #colorCode {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body id="body">
-    <h1>Random Colors:</h1>
-    
-</body>
-<script>
+  <h1>Click anywhere to change background color</h1>
+  <p id="colorCode">Color: #FFFFFF</p>
+
+  <script>
     const colors = ['#FF5733', '#33C1FF', '#75FF33', '#FF33EC', '#FFC733'];
-document.getElementById('body').addEventListener('click', function(){
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    document.body.style.backgroundColor = colors[randomIndex];
-    console.log('Background color changed to:', colors[randomIndex]);
-})
-</script>
+
+    document.getElementById('body').addEventListener('click', function () {
+      const randomIndex = Math.floor(Math.random() * colors.length);
+      const selectedColor = colors[randomIndex];
+      document.body.style.backgroundColor = selectedColor;
+      document.getElementById('colorCode').textContent = `Color: ${selectedColor}`;
+      console.log('Background color changed to:', selectedColor);
+    });
+  </script>
+</body>
 </html>
