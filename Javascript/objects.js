@@ -11,3 +11,8 @@ console.log(obj3);
 console.log(Object.keys(obj3));
 console.log(Object.values(obj3));
 
+let obj4={1:'a',2:'b',4:'c',5:'d'};
+let obj5={7:'e',8:'r',9:'g'};
+let result={...obj4,...obj5};
+console.log(result);
+
